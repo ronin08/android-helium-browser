@@ -26,6 +26,7 @@ solutions = [
     "managed": False,
     "custom_vars": {
       "checkout_android_prebuilts_build_tools": True,
+      "checkout_pgo_profiles": True,
       "checkout_telemetry_dependencies": False,
       "codesearch": "Debug",
     },
