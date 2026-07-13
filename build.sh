@@ -52,6 +52,7 @@ gclient sync -D --no-history --nohooks
 gclient runhooks
 rm -rf third_party/angle/third_party/VK-GL-CTS/
 ./build/install-build-deps.sh --no-prompt
+python3 $SCRIPT_DIR/vanadium/tools/common/apply_subprojects_patches.py --src_dir . --base_patch_dir $SCRIPT_DIR/vanadium/subprojects_patches
 
 # https://github.com/imputnet/helium-linux/blob/main/scripts/shared.sh
 # python3 "${SCRIPT_DIR}/helium/utils/name_substitution.py" --sub -t .
